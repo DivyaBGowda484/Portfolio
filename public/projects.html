@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects - Professional Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="/" class="logo-text">Portfolio</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="/" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/projects" class="nav-link active">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">My Projects</h1>
+            <p class="page-subtitle">Explore my latest work and development projects</p>
+        </div>
+    </section>
+
+    <!-- Projects Filter Section -->
+    <section class="projects-filter">
+        <div class="container">
+            <div class="filter-controls">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="project-search" placeholder="Search projects...">
+                </div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="Python">Python</button>
+                    <button class="filter-btn" data-filter="FastAPI">FastAPI</button>
+                    <button class="filter-btn" data-filter="Flask">Flask</button>
+                    <button class="filter-btn" data-filter="Django">Django</button>
+                    <button class="filter-btn" data-filter="Machine Learning">Machine Learning</button>
+                    <button class="filter-btn" data-filter="MongoDB">MongoDB</button>
+                    <button class="filter-btn" data-filter="SQL">SQL</button>
+                    <button class="filter-btn" data-filter="PostgreSQL">PostgreSQL</button>
+                    <button class="filter-btn" data-filter="Docker">Docker</button>
+                    <button class="filter-btn" data-filter="Streamlit">Streamlit</button>
+                    <button class="filter-btn" data-filter="AWS">AWS</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects">
+        <div class="container">
+            <div class="projects-grid" id="projects-container">
+                <!-- Projects will be populated by JavaScript -->
+            </div>
+            <div class="no-results" id="no-results" style="display: none;">
+                <i class="fas fa-search"></i>
+                <h3>No projects found</h3>
+                <p>Try adjusting your search or filter criteria</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="modal" id="project-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modal-project-image" src="" alt="Project Screenshot">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modal-project-title"></h2>
+                    <p id="modal-project-description"></p>
+                    <div class="modal-tech" id="modal-project-tech"></div>
+                    <div class="modal-features">
+                        <h3>Key Features</h3>
+                        <ul id="modal-project-features"></ul>
+                    </div>
+                    <div class="modal-links">
+                        <a id="modal-github-link" href="#" target="_blank" class="btn btn-secondary">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a id="modal-live-link" href="#" target="_blank" class="btn btn-primary">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Like What You See?</h2>
+                <p>I'm always working on new projects and would love to collaborate on your next idea. Let's build something amazing together.</p>
+                <div class="cta-buttons">
+                    <a href="/contact" class="btn btn-primary">Start a Project</a>
+                    <a href="/experience" class="btn btn-secondary">View Experience</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Professional Portfolio. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://github.com/DivyaBGowda484" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/divya2004/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html> 
