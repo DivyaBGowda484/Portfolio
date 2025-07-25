@@ -60,7 +60,6 @@ function displayProjects(projects) {
                 </div>
             </div>
             <div class="project-content">
-                <h3>${project.title}</h3>
                 <p>${project.description}</p>
                 <div class="project-tech">
                     ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}

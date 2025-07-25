@@ -66,7 +66,7 @@ const portfolioData = {
       technologies: ["Python", "Django", "SQLite", "HTML", "CSS", "Bootstrap"],
       github: "https://github.com/DivyaBGowda484/LibraryInformationManagementSystem",
       live: "https://www.youtube.com/watch?v=BIIp7xqaD6w",
-      image: "/images/project1.jpg", // To be changed
+      image: "/Users/divya/Desktop/Portfolio/public/images/libraryproject.jpeg",
       features: [
         "User authentication and role-based access (librarian/admin)",
         "Reader registration and management system",
