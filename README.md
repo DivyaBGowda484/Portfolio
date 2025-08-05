@@ -185,5 +185,3 @@ MIT License - feel free to use this template for your own portfolio!
 If you need help customizing this portfolio, please check the issues section or create a new issue.
 
 ---
-
-**Note**: Remember to update the personal information, projects, and contact details in the `server.js` file to match your own profile before deploying! 
